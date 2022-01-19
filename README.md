@@ -8,3 +8,7 @@ Allows you to test all the design patterns that exist in the PHP language
 ## __DECORATOR PATTERN__
 
 <hr>
+
+## __FACTORY PATTERN__
+
+<hr>
