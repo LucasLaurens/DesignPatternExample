@@ -12,3 +12,7 @@ Allows you to test all the design patterns that exist in the PHP language
 ## __FACTORY PATTERN__
 
 <hr>
+
+## __STRATEGY PATTERN__
+
+<hr>
