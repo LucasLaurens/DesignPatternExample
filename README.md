@@ -16,3 +16,7 @@ Allows you to test all the design patterns that exist in the PHP language
 ## __STRATEGY PATTERN__
 
 <hr>
+
+## __OBSERVER PATTERN__
+
+<hr>
