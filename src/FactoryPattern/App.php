@@ -6,39 +6,32 @@ namespace App\FactoryPattern;
 
 require_once __DIR__ . "../../../vendor/autoload.php";
 
-use App\FactoryPattern\Customer\Address;
-use App\FactoryPattern\Customer\Customer;
-use App\FactoryPattern\Factory\CustomerFactory;
-use App\FactoryPattern\Factory\CustomerFactoryInterface;
-use DateTime;
+use App\FactoryPattern\Factory\UserFactory;
+use App\FactoryPattern\Models\UserInterface;
+use App\FactoryPattern\Factory\UserAdminFactory;
 
 class App
 {
     public function run()
     {
-        $customerFactory = new CustomerFactory();
-        $customer = $customerFactory->create(
-            "Jean",
-            "Dupont",
-            "jean@dupont.fr",
-            "13 boulevard Rochechouart",
-            "Paris"
+        /** @var UserInterface $firstUser */
+        $firstUser = (new UserAdminFactory())->create(
+            'John',
+            'Doe',
+            'john.doe@mailinator.com',
+            'aze123!!'
         );
 
-        
-        foreach ($customer as $key => $value) {
-            if ($value instanceof Address) {
-                foreach ($value as $key => $value) {
-                    echo "$key = $value\n";
-                }
-                continue;
-            }
+        /** @var UserInterface $secondUser */
+        $secondUser = (new UserFactory())->create(
+            'Alain',
+            'Prudent',
+            'alain.prudent@mailinator.com',
+            'qwe123!!'
+        );
 
-            if(CustomerFactoryInterface::LAST_CONNEXION === $key) {
-                $value = $value->format('Y-m-d H:i:s');
-            }
-
-            echo "$key = $value\n";
+        foreach ([$firstUser, $secondUser] as $user) {
+            echo "The user {$user->getEmail()} has been added !" . PHP_EOL;
         }
     }
 }
