@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\StrategyPattern\Strategy;
 
-interface ExportStrategyInterface
+interface PaymentStrategy
 {
-    public function formatData();
+    public function pay(): void;
 }
