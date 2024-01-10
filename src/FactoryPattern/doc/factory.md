@@ -1,5 +1,9 @@
 # Factory Pattern
 
+## Type
+
+This design pattern is of the : Creation.
+
 ## How does it work, basically ?
 
 *More information from* [Refactoring Guru](https://refactoring.guru/fr/design-patterns/factory-method)

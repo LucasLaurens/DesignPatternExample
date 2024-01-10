@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\FactoryPattern\Factory;
 
-use App\FactoryPattern\Models\User;
-use App\FactoryPattern\Models\UserInterface;
+use App\Models\User;
+use App\Models\UserInterface;
 
 final class UserFactory implements FactoryInterface
 {

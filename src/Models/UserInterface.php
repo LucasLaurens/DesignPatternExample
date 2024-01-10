@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\FactoryPattern\Models;
+namespace App\Models;
 
 interface UserInterface
 {

@@ -27,6 +27,4 @@ class App
     }
 }
 
-$app = new App();
-
-$app->run();
+(new App())->run();

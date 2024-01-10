@@ -6,8 +6,8 @@ namespace App\FactoryPattern;
 
 require_once __DIR__ . "../../../vendor/autoload.php";
 
+use App\Models\UserInterface;
 use App\FactoryPattern\Factory\UserFactory;
-use App\FactoryPattern\Models\UserInterface;
 use App\FactoryPattern\Factory\UserAdminFactory;
 
 class App
@@ -19,7 +19,7 @@ class App
             'John',
             'Doe',
             'john.doe@mailinator.com',
-            'aze123!!'
+            'aze123?!',
         );
 
         /** @var UserInterface $secondUser */
@@ -27,7 +27,7 @@ class App
             'Alain',
             'Prudent',
             'alain.prudent@mailinator.com',
-            'qwe123!!'
+            'qwe123?!',
         );
 
         foreach ([$firstUser, $secondUser] as $user) {
