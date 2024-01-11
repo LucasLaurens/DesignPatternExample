@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\StrategyPattern\Strategy;
 
-final class PaypalConcreteStrategy implements PaymentStrategy
+final readonly class PaypalConcreteStrategy implements PaymentStrategy
 {
     public function pay(): void
     {

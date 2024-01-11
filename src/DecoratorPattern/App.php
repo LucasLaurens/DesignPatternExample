@@ -9,7 +9,7 @@ use App\DecoratorPattern\Decorator\UserDecorator;
 
 require_once __DIR__ . "../../../vendor/autoload.php";
 
-class App
+final class App
 {
     public function run()
     {

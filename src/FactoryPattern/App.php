@@ -10,7 +10,7 @@ use App\Models\UserInterface;
 use App\FactoryPattern\Factory\UserFactory;
 use App\FactoryPattern\Factory\UserAdminFactory;
 
-class App
+final class App
 {
     public function run()
     {

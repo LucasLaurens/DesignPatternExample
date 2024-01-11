@@ -6,7 +6,7 @@ namespace App\DecoratorPattern\Decorator;
 
 use App\Models\UserInterface;
 
-final class UserDecorator
+final readonly class UserDecorator
 {
     public function __construct(private UserInterface $user)
     {
